@@ -13,6 +13,7 @@ import retrofit2.http.QueryMap;
  *@Date: 时间
  *@Description:功能api请求网址
  * */public interface Api {
+     //正在上映电影
      @GET("movie/v2/findReleaseMovieList")
     Observable<Movebean> domove(@QueryMap Map<String,Integer>map);
 
